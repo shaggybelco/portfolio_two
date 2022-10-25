@@ -1,45 +1,52 @@
 .tx {
-    margin-top: 30px;
-  }
-  
-  button {
-    color: rgb(0, 98, 189) !important;
-  }
-  
-  .mv {
-    padding-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    // text-decoration: underline;
-  }
-  
-  .sk {
-    padding-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  
-  li {
-    // list-style-image: url(../../../assets/code.png);
-    /* OR */
-    list-style-type: "👉";
-    padding-inline-start: 1ch;
-  }
-  
-  img {
-    image-rendering: optimizeQuality;
-  }
-  
-  i{
-      background-color: rgba(0, 98, 189, 0.147);
-      padding: 10px;
-      margin: 5px;
-      border-radius: 5px;
-      color: rgb(0, 0, 0);
-      text-decoration-color: white;
-  }
-  
-  .b{
-      padding-left: 6px;
-      font-style: normal;
-  }
+  margin-top: 30px;
+}
+
+button {
+  color: rgb(0, 98, 189) !important;
+}
+
+.mv {
+  padding-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  // text-decoration: underline;
+}
+
+.sk {
+  padding-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+li {
+  // list-style-image: url(../../../assets/code.png);
+  /* OR */
+  list-style-type: "👉";
+  padding-inline-start: 1ch;
+}
+
+img {
+  image-rendering: optimizeQuality;
+}
+
+.i {
+  background-color: rgba(0, 98, 189, 0.147);
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  text-decoration-color: white;
+  border: 1px solid rgb(0, 98, 189);
+}
+
+.i:hover {
+  cursor: pointer;
+  border: 1px solid rgb(0, 98, 189);
+  transform: scale(1.05);
+}
+
+.b {
+  padding-left: 6px;
+  font-style: normal;
+}
