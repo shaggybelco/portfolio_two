@@ -1,0 +1,87 @@
+.n{
+    margin-top: 50% !important;
+    line-height: 20px;
+}
+
+li:hover{
+    background-color: rgb(0, 98, 189);
+    border-radius: 5px;
+    color: white;
+}
+
+li{
+    background-color: rgba(176, 176, 176, 0.169);
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.avt{
+    top: -20% !important;
+}
+
+.social{
+    position:relative;
+    top: -15% !important;
+    left: 31%;
+}
+
+// ul{
+//     background-color: rgba(255, 255, 255, 0.947);
+// }
+
+.nav{
+    background-color: rgb(0, 98, 189);
+    width: 50px;
+    position:absolute;
+    top: 1% !important;
+    left: 85%;
+    z-index: 1000000;
+    border-radius: 100%;
+    color: white;
+}
+
+
+.lk:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+    color: rgb(0, 98, 189);
+}
+
+.lk{
+    size: 100px;
+    background-color: rgba(190, 190, 190, 0.275);
+    margin: 10px;
+    border-radius: 100%;
+    padding: 5px;
+}
+li.active{
+    background-color:rgb(0, 98, 189);
+    color: white;
+    animation-name: example;
+    animation-duration: 4s;
+}
+  
+  @keyframes example {
+      from {background-color: rgb(255, 255, 255);}
+      to {background-color: rgb(0, 98, 189);}
+    }
+
+main{
+    width: 100%;
+    max-height: 100vh;
+}
+
+.named{
+    position:relative;
+    top: -17% !important;
+    left: 0%;
+}
+
+#about{
+    margin-top: 100px;
+}
+
+img{
+    image-rendering: optimizeQuality;
+}
