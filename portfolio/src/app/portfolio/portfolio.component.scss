@@ -1,0 +1,51 @@
+
+:host ::ng-deep .tabview-custom { i, span { vertical-align: middle; } span { margin: 0 .5rem; }
+} :host ::ng-deep .p-button { margin-right: .25rem;
+} :host ::ng-deep .p-tabview p { line-height: 1.5; margin: 0;
+}
+.imgsize{
+    height: 40% !important;
+}
+
+:host ::ng-deep .p-button {
+    margin: 0 .5rem 0 0;
+    min-width: 10rem;
+}
+
+p {
+    margin: 0;
+}
+
+.confirmation-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+:host ::ng-deep .p-dialog .p-button {
+    min-width: 6rem;
+}
+
+.web{
+    background-color: rgba(0,98,189);
+    width: 30%;
+    padding: 10px;
+    border-radius: 5px;
+}
+.web:hover{
+    transform: scale(1.1);
+}
+
+label:hover{
+    transform: scale(1.1);
+}
+
+.tt{
+    color: white;
+}
+
+.n{
+    background-color: rgba(0,98,189);
+    border: none;
+    color: white;
+}

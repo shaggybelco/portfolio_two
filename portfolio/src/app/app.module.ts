@@ -14,7 +14,12 @@ import {MatListModule} from '@angular/material/list'
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ResumeComponent } from './resume/resume.component';
-import { ContactComponent } from './contact/contact.component'
+import { ContactComponent } from './contact/contact.component';
+import {CardModule} from 'primeng/card';
+import {TabViewModule} from 'primeng/tabview';
+import {DialogModule} from 'primeng/dialog';
+import {ButtonModule} from 'primeng/button';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +28,7 @@ import { ContactComponent } from './contact/contact.component'
     AboutComponent,
     PortfolioComponent,
     ResumeComponent,
-    ContactComponent
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,7 +38,12 @@ import { ContactComponent } from './contact/contact.component'
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    MatToolbarModule
+    MatToolbarModule,
+    BrowserModule,
+    CardModule,
+    TabViewModule,
+    DialogModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

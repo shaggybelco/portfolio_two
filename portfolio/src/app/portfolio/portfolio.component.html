@@ -1,1 +1,89 @@
-<p>portfolio works!</p>
+<div class="min-h-screen bg-base-100">
+    <h1 class="text-5xl font-bold flex mb-6 justify-center">Portfolio</h1>
+
+    <div class="card flex justify-center">
+        <p-tabView>
+            <p-tabPanel header="All" leftIcon="pi pi-check-circle" tooltip="All">
+                <div class="flex flex-wrap justify-center  mt-6 mb-6">
+                    <div class="flex flex-row justify-center m-6">
+                        <div class="card w-80 glass">
+                            <figure><img src="../../assets/Screenshot 2022-10-27 at 10.30.38.png" alt="note!" />
+                            </figure>
+                            <div class="card-body">
+                                <h2 class="card-title">Note App</h2>
+                                <p>App that save your note online and save them for you even when you lose your phone
+                                    you
+                                    can access them from anywhere</p>
+                                <div class="card-actions justify-end">
+                                    <label for="my-modal-6" class="btn modal-button n">Learn more..</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </p-tabPanel>
+            <p-tabPanel header="APPS" leftIcon="pi pi-th-large" tooltip="App">
+                <div class="flex flex-wrap justify-center  mt-6 mb-6">
+                    <div class="flex flex-row justify-center m-6">
+                        <div class="card w-80 glass">
+                            <figure><img src="../../assets/Screenshot 2022-10-27 at 10.30.38.png" alt="note!" />
+                            </figure>
+                            <div class="card-body">
+                                <h2 class="card-title">Note App</h2>
+                                <p>App that save your note online and save them for you even when you lose your phone
+                                    you
+                                    can access them from anywhere</p>
+                                <div class="card-actions justify-end">
+                                    <label for="my-modal-6" class="btn modal-button n">Learn more..</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </p-tabPanel>
+            <p-tabPanel header="WEBSITES" leftIcon="pi pi-globe" tooltip="WEBSITES">
+                <div class="flex flex-wrap justify-center  mt-6 mb-6">
+                    <div class="flex flex-row justify-center m-6">
+                        <div class="card w-80 glass">
+                            <figure><img src="../../assets/not.png" alt="note!" />
+                            </figure>
+                            <div class="card-body">
+                                <h2 class="card-title">No Website Yet.</h2>
+                                
+                                <!-- <div class="card-actions justify-end">
+                                    <label for="my-modal-6" class="btn modal-button n">Learn more..</label>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </p-tabPanel>
+        </p-tabView>
+    </div>
+</div>
+
+<!-- The button to open modal -->
+
+
+<!-- Put this part before </body> tag -->
+
+<div class="flex justify-center">
+    <input type="checkbox" id="my-modal-6" class="modal-toggle" />
+    <div class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+            <h3 class="font-bold text-lg">Note App</h3>
+            <img src="../../assets/Screenshot 2022-10-27 at 10.30.38.png" alt="">
+            <p>App that save your note online and save them for you even when you lose your phone
+                you
+                can access them from anywhere</p>
+
+            <div class="modal-action">
+                <div class="web flex justify-center">
+                    <a class="tt" href="https://belco.netlify.app/">See the app</a>
+                </div>
+                <label for="my-modal-6" class="btn btn-error">Exit</label>
+            </div>
+        </div>
+    </div>
+</div>
