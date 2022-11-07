@@ -7,7 +7,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from './material/material.module';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatIconModule} from '@angular/material/icon'
 import {MatListModule} from '@angular/material/list'
@@ -34,7 +33,6 @@ import {ButtonModule} from 'primeng/button';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule,
     MatSidenavModule,
     MatIconModule,
     MatListModule,
