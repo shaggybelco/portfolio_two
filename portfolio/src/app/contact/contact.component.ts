@@ -9,13 +9,8 @@ export class ContactComponent implements OnInit {
 
   constructor() { }
 
-  name!: string;
-  email!: string;
-  subject!: string;
-  message!: string;
-
   ngOnInit(): void {
-    console.log(this.name)
+   
   }
 
 }
