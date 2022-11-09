@@ -56,23 +56,26 @@
             <!-- right -->
             <div class="card card-compact w-full bg-base-100 shadow-xl">
                 <div class="card-body mt-6">
-                    <div class="flex flex-col justify-center">
-                        <div class="flex lg:flex-col sm:flex-row xs:flex-row md:flex-row">
-                            <input type="text" placeholder="Your Name"
-                                class="input input-bordered input-success w-full mr-2 mb-6">
-                            <input type="email" placeholder="Your Email"
-                                class="input input-bordered input-success w-full sm:mb-6">
+                    <form action="https://formspree.io/f/xqkjwbjo" method="POST">
+                        <div class="flex flex-col justify-center">
+                            <div class="flex lg:flex-col sm:flex-row xs:flex-row md:flex-row">
+                                <input type="text" placeholder="Your Name" name="name"
+                                    class="input input-bordered input-success w-full mr-2 mb-6">
+                                <input type="email" placeholder="Your Email" name="email"
+                                    class="input input-bordered input-success w-full sm:mb-6">
+                            </div>
+                            <div class="mb-6">
+                                <input type="text" placeholder="Subject" name="subject"
+                                    class="input input-bordered input-success w-full">
+                            </div>
+                            <div class="mb-6">
+                                <textarea class="textarea textarea-success w-full" name="message" placeholder="Bio"></textarea>
+                            </div>
+                            <div class="mb-6 flex justify-end">
+                                <button type="submit" class="btn btn-primary">Send Message</button>
+                            </div>
                         </div>
-                        <div class="mb-6">
-                            <input type="text" placeholder="Subject" class="input input-bordered input-success w-full">
-                        </div>
-                        <div class="mb-6">
-                            <textarea class="textarea textarea-success w-full" placeholder="Bio"></textarea>
-                        </div>
-                        <div class="mb-6 flex justify-end">
-                            <button class="btn btn-primary">Send Message</button>
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
