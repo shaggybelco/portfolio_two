@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PrimeNGConfig } from 'primeng/api';
+import { ThemeService } from './services/theme.service';
 
 @Component({
   selector: 'app-root',
@@ -8,13 +8,19 @@ import { PrimeNGConfig } from 'primeng/api';
 })
 export class AppComponent implements OnInit {
 
-  constructor(private primengConfig: PrimeNGConfig) {}
+  constructor(private themeService: ThemeService) { }
 
+  activeSection: string = 'home';
+  newTheme: string = 'light-theme';
 
-  ngOnInit() {
-    this.primengConfig.ripple = true;
+  toggleTheme() {
+    this.newTheme = this.themeService.getActiveTheme() === 'light-theme' ? 'dark-theme' : 'light-theme';
+    this.themeService.switchTheme(this.newTheme);
   }
 
+  ngOnInit() {
+    this.themeService.switchTheme('light-theme'); // or 'dark-theme' based on preference
+  }
 
   title = 'portfolio';
 

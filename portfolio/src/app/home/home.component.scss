@@ -1,17 +1,98 @@
-button{
-    background-color: rgb(0, 98, 189) !important;   
-    color: white;
-    border: none;
-}
+.home-container {
+  box-shadow: inset -15px -15px 15px var(--upper-shadow),
+    /* Main shadow */ inset 15px 15px 15px var(--bottom-shadow); /* Soft subtle shadow */
+  // background-color: whitesmoke;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 30px;
 
-button:hover{
-    transform: scale(1.1);
-}
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+    height: 400px;
+    padding: 50px;
+  }
 
-.cd{
-    color: rgb(174, 228, 239);
-}
+  .message {
+    flex: 2;
 
-.vv{
-    color: rgb(214, 250, 252);
+    .text {
+      color: rgb(113, 194, 253);
+      color: linear-gradient(
+        180deg,
+        rgba(113, 194, 253, 1) 0%,
+        rgba(102, 172, 248, 1) 28%,
+        rgba(93, 154, 249, 1) 73%
+      );
+
+      font-size: 30px;
+      font-weight: 900;
+
+      @media screen and (min-width: 1024px) {
+        font-size: 50px;
+        font-weight: 900;
+      }
+    }
+
+    .desc {
+      .o-e {
+        color: var(--primary-color);
+      }
+
+      .o-e::before {
+        content: "<";
+        color: var(--text-color);
+      }
+
+      .o-e::after {
+        content: ">";
+        color: var(--text-color);
+      }
+
+      .c-e {
+        color: var(--primary-color);
+      }
+
+      .c-e::before {
+        content: "</";
+        color: var(--text-color);
+      }
+
+      .c-e::after {
+        content: ">";
+        color: var(--text-color);
+      }
+    }
+
+    .actions {
+      padding-block: 40px;
+    }
+  }
+
+  .image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    .img-holder {
+      height: 300px;
+      border-radius: 19% 81% 38% 62% / 33% 18% 82% 67%;
+      background: linear-gradient(
+        180deg,
+        rgba(113, 194, 253, 1) 0%,
+        rgba(102, 172, 248, 1) 28%,
+        rgba(93, 154, 249, 1) 73%
+      );
+
+      img {
+        height: 400px;
+
+        @media screen and (min-width: 1024px) {
+          height: 460px;
+        }
+      }
+    }
+  }
 }

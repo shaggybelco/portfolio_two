@@ -1,91 +1,59 @@
-.n{
-    margin-top: 50% !important;
-    line-height: 20px;
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: var(--background-color);
 }
 
-li:hover{
-    background-color: rgb(0, 98, 189);
-    border-radius: 5px;
-    color: white;
+.hamburger {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
-li{
-    background-color: rgba(176, 176, 176, 0.169);
-    margin-bottom: 5px;
-    border-radius: 5px;
-    font-weight: bold;
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
-.avt{
-    top: -20% !important;
-}
+/* Mobile styles */
+@media (max-width: 768px) {
+  .nav {
+    justify-content: end;
+  }
 
-.social{
-    position:relative;
-    top: -15% !important;
-    left: 31%;
-}
+  .hamburger {
+    display: block;
+  }
 
-// ul{
-//     background-color: rgba(255, 255, 255, 0.947);
-// }
-
-.nav{
-    background-color: rgb(0, 98, 189);
-    width: 50px;
-    position:absolute;
-    top: 1% !important;
-    left: 85%;
-    z-index: 1000000;
-    border-radius: 100%;
-    color: white;
-}
-
-
-.lk:hover{
-    cursor: pointer;
-    transform: scale(1.5);
-    color: rgb(0, 98, 189);
-}
-
-.lk{
-    size: 100px;
-    background-color: rgba(190, 190, 190, 0.275);
-    margin: 10px;
-    border-radius: 100%;
-    padding: 5px;
-}
-
-.active{
-    background-color:rgb(0, 98, 189);
-}
-li.active{
-    background-color:rgb(0, 98, 189);
-    color: white;
-    animation-name: example;
-    animation-duration: 4s;
-}
-  
-  @keyframes example {
-      from {background-color: rgb(255, 255, 255);}
-      to {background-color: rgb(0, 98, 189);}
-    }
-
-main{
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 60px; /* Adjust this based on your navbar height */
+    right: 0;
+    background-color: var(--background-color); /* Adjust the background color */
     width: 100%;
-    max-height: 100vh;
-}
+    box-shadow: 0px 4px 2px -2px gray; /* Optional shadow for depth */
+    z-index: 1000;
+  }
 
-.named{
-    position:relative;
-    top: -17% !important;
-    left: 0%;
-}
+  .nav-links.open {
+    display: flex;
+  }
 
-#about{
-    margin-top: 100px;
-}
-
-img{
-    image-rendering: optimizeQuality;
+  .a-btn {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc; /* Optional: line between links */
+  }
 }

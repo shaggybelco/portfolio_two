@@ -4,7 +4,84 @@
 @tailwind utilities;
 // html, body { height: 100%; }
 // body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-*{
-    font-family: Arial, Helvetica, sans-serif;
+* {
+  font-family: "Exo 2", sans-serif;
 }
 
+@import "./themes/light-theme";
+@import "./themes/dark-theme";
+
+// Define CSS variables for themes
+:root {
+  --primary-color: #{$primary-color};
+  --secondary-color: #{$secondary-color};
+  --background-color: #{$background-color};
+  --text-color: #{$text-color};
+  --accent-color: #{$accent-color};
+  --upper-shadow: #{$upper-shadow};
+  --bottom-shadow: #{$bottom-shadow};
+}
+
+// Usage in your CSS
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.a-btn {
+  display: flex;
+  align-items: center;
+
+  &.active {
+    background-color: var(--secondary-color); /* White background */
+    font-size: 16px; /* Adjust font size */
+    padding: 10px 20px; /* Padding for button size */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: -15px -15px 15px var(--upper-shadow),
+      /* Main shadow */ 15px 15px 15px var(--bottom-shadow); /* Soft subtle shadow */
+    transition: box-shadow 0.3s ease; /* Smooth transition for shadow */
+    display: inline-flex;
+    gap: 5px;
+    justify-content: center;
+    min-width: 140px;
+  }
+
+  &.active:active {
+    box-shadow: inset -15px -15px 15px var(--upper-shadow),
+      /* Main shadow */ inset 15px 15px 15px var(--bottom-shadow); /* Soft subtle shadow */
+  }
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  box-shadow: inset -10px -10px 10px var(--upper-shadow),
+    /* Main shadow */ inset 10px 10px 10px var(--bottom-shadow); /* Soft subtle shadow */
+  padding: 15px;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  width: 100%;
+}
+
+input:focus {
+  outline: none;
+}
+
+.theme-toggler {
+  position: fixed;
+  top: 90%;
+  right: 5%;
+  min-width: none !important;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  padding: 10px;
+  box-shadow: -15px -15px 15px var(--upper-shadow),
+    /* Main shadow */ 15px 15px 15px var(--bottom-shadow); /* Soft subtle shadow */
+
+  img {
+    height: 20px;
+    width: 20px;
+  }
+}

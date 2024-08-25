@@ -1,0 +1,20 @@
+// _light-theme.scss
+
+$primary-color: #71c2fd;
+$secondary-color: whitesmoke;
+$background-color: #eaf2fb;
+$text-color: #343a40;
+$accent-color: #1e90ff;
+$bottom-shadow: #00000014;
+$upper-shadow: #ffffffec;
+
+// Light theme styles
+.light-theme {
+  --primary-color: #{$primary-color};
+  --secondary-color: #{$secondary-color};
+  --background-color: #{$background-color};
+  --text-color: #{$text-color};
+  --accent-color: #{$accent-color};
+  --upper-shadow: #{$upper-shadow};
+  --bottom-shadow: #{$bottom-shadow};
+}

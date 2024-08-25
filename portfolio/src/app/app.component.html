@@ -1,1 +1,22 @@
 <app-navbar></app-navbar>
+<main>
+  <button class="theme-toggler" (click)="toggleTheme()">
+    <img [src]="newTheme === 'light-theme' ? '../assets/day.svg' : '../assets/night.svg'" />
+  </button>
+
+  <section id="home">
+    <app-home></app-home>
+  </section>
+  <section id="about">
+    <app-about></app-about>
+  </section>
+  <section id="portfolio">
+    <app-portfolio></app-portfolio>
+  </section>
+  <section id="contact">
+    <app-contact></app-contact>
+  </section>
+  <section>
+    <app-footer></app-footer>
+  </section>
+</main>

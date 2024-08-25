@@ -1,52 +1,109 @@
-.tx {
-  margin-top: 30px;
-}
+.about-container {
+  display: flex;
+  padding-block: 60px;
+  gap: 20px;
+  flex-direction: column-reverse;
 
-button {
-  color: rgb(0, 98, 189) !important;
-}
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+    padding-block: 100px;
+  }
 
-.mv {
-  padding-left: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  // text-decoration: underline;
-}
+  .me {
+    width: auto;
+    display: none;
 
-.sk {
-  padding-left: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
+    @media screen and (min-width: 1024px) {
+      width: 40%;
+      display: block;
+    }
 
-li {
-  // list-style-image: url(../../../assets/code.png);
-  /* OR */
-  list-style-type: "👉";
-  padding-inline-start: 1ch;
-}
+    .i-c {
+      border-radius: 10px;
+      box-shadow: -15px -15px 15px var(--upper-shadow),
+        /* Main shadow */ 15px 15px 15px var(--bottom-shadow); /* Soft subtle shadow */
+      padding: 10px;
+      width: 100%;
 
-img {
-  image-rendering: optimizeQuality;
-}
+      .me-img {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
 
-.i {
-  background-color: rgba(0, 98, 189, 0.147);
-  padding: 10px;
-  margin: 5px;
-  border-radius: 5px;
-  color: rgb(0, 0, 0);
-  text-decoration-color: white;
-  border: 1px solid rgb(0, 98, 189);
-}
+        @media screen and (min-width: 1024px) {
+          height: 605px;
+          width: 100%;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
 
-.i:hover {
-  cursor: pointer;
-  border: 1px solid rgb(0, 98, 189);
-  transform: scale(1.05);
-}
+  .abt-content {
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+    width: auto;
 
-.b {
-  padding-left: 6px;
-  font-style: normal;
+    @media screen and (min-width: 1024px) {
+      width: 60%;
+      flex-direction: column;
+      display: flex;
+      gap: 10px;
+    }
+
+    .a-title {
+      font-weight: 800;
+      font-size: 50px;
+    }
+
+    .a-name {
+      font-weight: 800;
+    }
+
+    .a-job {
+      color: var(--accent-color);
+    }
+
+    .divider {
+      height: 1px;
+      width: 250px;
+      background: var(--text-color);
+    }
+
+    .info {
+      font-weight: 800;
+
+      span {
+        font-weight: normal;
+      }
+    }
+
+    .s-title {
+      color: var(--accent-color);
+      text-decoration: underline;
+      padding-block-start: 7px;
+    }
+
+    .skills {
+      padding-block: 15px;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+
+      .a-btn {
+        color: var(--accent-color);
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .download {
+      padding-block-start: 10px;
+    }
+  }
 }

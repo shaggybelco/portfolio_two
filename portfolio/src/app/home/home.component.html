@@ -1,15 +1,21 @@
-<div class="hero min-h-screen bg-base-200"
-    style="background-image: url(../../../assets/me.jpeg);background-position: 0px 0px;background-repeat: no-repeat;">
-    <div class="hero-overlay bg-opacity-60"></div>
-    <div class="hero-content flex-col lg:flex-row-reverse">
-        <div class="text-center lg:text-left">
-            <div class="max-w-full">
-                <h1 class="text-5xl font-bold cd">Shaggy Belco Sambo</h1>
-                <p class="py-6 vv">Software Developer, Fullstack Developer and UI/UX Designer.</p>
+<div class="home-container">
+  <div class="message">
+    <h1 class="text">
+      Unlock Your Project's Potential!
+    </h1>
+    <span class="desc">
+      <span class="o-e">code</span>
+      I build powerful, full-stack applications that bring ideas to life.
+      <span class="c-e">code</span>
+    </span>
 
-                <button class="btn btn-primary" href="#about"
-                    onClick="document.getElementById('about').scrollIntoView({behavior:'smooth',block:'start'});">Get Started</button>
-            </div>
-        </div>
+    <div class="actions">
+      <button (click)="scrollToSection('portfolio')" class="a-btn active">Explore now</button>
     </div>
+  </div>
+  <div class="image">
+    <div class="img-holder">
+      <img src="../../assets/20240218_163735-removebg-preview.png" />
+    </div>
+  </div>
 </div>
