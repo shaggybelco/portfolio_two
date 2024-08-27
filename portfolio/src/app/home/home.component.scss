@@ -88,6 +88,7 @@
 
       img {
         height: 400px;
+        filter: drop-shadow(0 0 12px grey);
 
         @media screen and (min-width: 1024px) {
           height: 460px;
